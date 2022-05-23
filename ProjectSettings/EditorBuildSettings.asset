@@ -12,8 +12,8 @@ EditorBuildSettings:
     path: Assets/Scenes/Sobiranje.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 1
-    path: Assets/Scenes/Odzemanje.unity
-    guid: b24c9371beeded144a68b8cb0fedbb9a
+    path: Assets/Scenes/Odzemanje1.unity
+    guid: 75118b1c1e5a3fd4cb304b7392859d8a
   - enabled: 1
     path: Assets/Scenes/Mnozenje.unity
     guid: 804eea5af0ed3b347b5eb1fb5d3e7130
