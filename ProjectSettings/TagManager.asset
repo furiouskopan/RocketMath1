@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Friendly
   - Unfriendly
+  - Music
   layers:
   - Default
   - TransparentFX

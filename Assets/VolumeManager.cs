@@ -5,11 +5,20 @@ using UnityEngine.UI;
 
 public class VolumeManager : MonoBehaviour
 {
-    [SerializeField] private Slider volumeSlider = null;
-    [SerializeField] private Text volumeTextUI = null;
+    public AudioSource AudioSource;
+    private float musicVolume = 1f;
 
-    public void VolumeSlider(float volume)
+    void Start()
     {
-        volumeTextUI.text = volume.ToString("0,0");
+        AudioSource.Play();
+    }
+    // Update is called once per frame
+    void Update()
+    {
+        AudioSource.volume = musicVolume;
+    }
+    public void updateVolume(float volume)
+    {
+        musicVolume = volume;
     }
 }
