@@ -6,10 +6,14 @@ using UnityEngine.SceneManagement;
 public class CollisionScript : MonoBehaviour
 {
     bool isTransitioning = false;
-    AudioSource audioSource;
     bool disableCollision = false;
+    AudioSource audioSource;
+    
     [SerializeField] AudioClip crash;
     [SerializeField] AudioClip win;
+    [SerializeField] ParticleSystem crashParticles;
+    [SerializeField] ParticleSystem winParticles;
+    
 
     void Update()
     {
@@ -51,6 +55,7 @@ public class CollisionScript : MonoBehaviour
         isTransitioning = true;
         audioSource.Stop();
         audioSource.PlayOneShot(win);
+        winParticles.Play();
         GetComponent<Movement>().enabled = false;
         Invoke("NextLevel", 1.3f);
     }
@@ -58,8 +63,9 @@ public class CollisionScript : MonoBehaviour
     {
         isTransitioning = true;
         audioSource.Stop();
-        GetComponent<Movement>().enabled = false;
         audioSource.PlayOneShot(crash);
+        crashParticles.Play(); 
+        GetComponent<Movement>().enabled = false;
         Invoke("Respawn", 1.2f);
     }
    

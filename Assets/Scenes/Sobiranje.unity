@@ -6180,6 +6180,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   crash: {fileID: 0}
   win: {fileID: 0}
+  crashParticles: {fileID: 0}
+  winParticles: {fileID: 0}
 --- !u!82 &1468123804
 AudioSource:
   m_ObjectHideFlags: 0
@@ -8968,6 +8970,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   crash: {fileID: 0}
   win: {fileID: 8300000, guid: 264a6748d0799c94cbae53794a54fc9d, type: 3}
+  crashParticles: {fileID: 0}
+  winParticles: {fileID: 0}
 --- !u!4 &9185899377703506915
 Transform:
   m_ObjectHideFlags: 0
